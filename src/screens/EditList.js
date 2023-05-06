@@ -16,7 +16,7 @@ import {
   import DatePicker from 'react-native-date-picker'
   import { StackActions } from '@react-navigation/native';
   import DropDownPicker from 'react-native-dropdown-picker';
-  import Logo from '../assets/Logo.png'
+  // import Logo from '../assets/Logo.png'
 
 const EditList = ({route}) => {
     const navigation = useNavigation();
@@ -68,7 +68,7 @@ const EditList = ({route}) => {
   return (
     <View style={styles.container}>
     <View style={styles.navbar}>
-      <Image source={Logo} style={styles.logo}/>
+      {/* <Image source={Logo} style={styles.logo}/> */}
       </View>
     <View style={styles.form}>
     <Text style={styles.Text}>Kegiatan</Text>

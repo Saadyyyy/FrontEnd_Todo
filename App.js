@@ -5,7 +5,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-//ini kodingan screen yang digunain dalam project 
 import Login from './src/screens/Login'; 
 import Register from './src/screens/Register'; 
 import Homepage from './src/screens/HomeScreen'; 
@@ -13,7 +12,6 @@ import AddList from './src/screens/AddList';
 import EditList from './src/screens/EditList'; 
 import Account from './src/screens/Account'; 
 
-//pemanggilan stack dan bottom tab
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -35,7 +33,7 @@ const RootHome = () => {
         tabBarInactiveTintColor : '#2d696e',
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#4babb3',
+          backgroundColor: 'grey',
           paddingVertical : 10,
           height : 60,
         },
@@ -48,7 +46,7 @@ const RootHome = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="playlist-check" color={color} size={40} />
+            <Icon name="playlist-check" color={'white'} size={40} />
           ),
         }}
       />
@@ -59,7 +57,7 @@ const RootHome = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="plus-circle-outline" color={color} size={40} />
+            <Icon name="plus-circle-outline" color={'white'} size={40} />
           ),
         }}
       />
@@ -71,7 +69,7 @@ const RootHome = () => {
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="account" color={color} size={40} />
+            <Icon name="account" color={'white'} size={40} />
           ),
         }}
       />
@@ -79,7 +77,6 @@ const RootHome = () => {
   );
 }
 
-//Navigation Container untuk manggil screen
 const App = () => {
   return (
     <NavigationContainer>

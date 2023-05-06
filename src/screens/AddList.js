@@ -10,8 +10,8 @@ import {
 } from 'react-native'
 import React, { useState, useEffect } from 'react'
 // // import Illustration from '../assets/main.png'
-import Cover from '../assets/Main2.jpg'
-import Logo from '../assets/Logo.png'
+// import Cover from '../assets/Main2.jpg'
+// import Logo from '../assets/Logo.png'
 import { useNavigation } from '@react-navigation/native'
 import axios from 'axios'
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -84,9 +84,9 @@ const AddList = () => {
 
   return (
     <View style={styles.container}>
-    <ImageBackground source={Cover} resizeMode="cover">
+    {/* <ImageBackground source={Cover} resizeMode="cover"> */}
     <View style={styles.navbar}>
-      <Image source={Logo} style={styles.logo}/>
+      {/* <Image source={Logo} style={styles.logo}/> */}
       </View>
      <View style={styles.body}>
          <Text style={styles.title1}>Tambah List Baru</Text>
@@ -119,7 +119,7 @@ const AddList = () => {
            <Text style = {styles.buttonText}>Tambah</Text>
        </TouchableOpacity>
      </View>
-     </ImageBackground>
+     {/* </ImageBackground> */}
    </View>
   )
 }

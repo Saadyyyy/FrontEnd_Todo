@@ -11,7 +11,7 @@ import {
 import React, { useState, useEffect } from 'react'
 // import CheckBox from '@react-native-community/checkbox';
 // // import Illustration from '../assets/main.png'
-import Logo from '../assets/Logo.png'
+// import Logo from '../assets/Logo.png'
 import { useNavigation } from '@react-navigation/native'
 import axios from 'axios'
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -129,12 +129,10 @@ const getData = async () => {
           console.log(error);
           ToastAndroid.show("Gagal mengubah list", ToastAndroid.SHORT)
         }
-  
       }
 
       const DeleteList = async(value) => {
         console.log('value', value);
-  
         try {
           const response = await axios.delete(`http://192.168.1.13:3800/list?id=${value}`,{
           })
@@ -174,7 +172,7 @@ const getData = async () => {
     <View style={styles.container}>
     <ScrollView>
       <View style={styles.navbar}>
-      <Image source={Logo} style={styles.logo}/>
+      {/* <Image source={Logo} style={styles.logo}/> */}
       </View>
       <View style={styles.header}>
       <Text style={styles.title}>Welcome, {data.name}</Text>

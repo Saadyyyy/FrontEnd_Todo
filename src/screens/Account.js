@@ -12,7 +12,7 @@ import React, { useState, useEffect } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native'
-import Logo from '../assets/Logo.png'
+// import Logo from '../assets/Logo.png'
 import ProfileP from '../assets/Profile.jpeg'
 
 const Account = () => {
@@ -94,7 +94,7 @@ const Account = () => {
     return (
         <View style={styles.container}>
         <View style={styles.navbar}>
-        <Image source={Logo} style={styles.logo}/>
+        {/* <Image source={Logo} style={styles.logo}/> */}
         </View>
         <ScrollView>
         <View style={styles.body}>
