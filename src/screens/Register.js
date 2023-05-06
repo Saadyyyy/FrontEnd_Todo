@@ -10,7 +10,6 @@ import {
 } from 'react-native'
 import React, { useState, useEffect } from 'react'
 // // import Illustration from '../assets/main.png'
-import Poster from '../assets/Main2.jpg'
 import { useNavigation } from '@react-navigation/native'
 import axios from 'axios'
 
@@ -46,7 +45,6 @@ const Register = () => {
 
   return (
     <View style={styles.container}>
-     <ImageBackground source={Poster} resizeMode="cover">
       <View style={styles.body}>
           <Text style={styles.title1}>Make an new account</Text>
           {/* <Image source={Illustration} style={styles.Illustration}/> */}
@@ -86,14 +84,13 @@ const Register = () => {
         </TouchableOpacity>
         <Text style = {styles.lowerText}>
           Already have an account? 
-          <Text style ={{fontWeight : 'bold',color:'orange'}} 
+          <Text style ={{fontWeight : 'bold',color:'##9E6F21'}} 
           onPress={() => navigation.navigate('Login')}
           >
            Sign In here
         </Text>
         </Text>
       </View>
-      </ImageBackground>
     </View>
   )
 }
@@ -158,7 +155,7 @@ const styles = StyleSheet.create({
   button : {
       width :300,
       height : 50,
-      backgroundColor : '#f0a04b',
+      backgroundColor : '#9E6F21',
       borderRadius : 50,
       justifyContent : 'center',
       alignItems : 'center',

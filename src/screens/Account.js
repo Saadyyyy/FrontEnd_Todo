@@ -13,7 +13,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native'
 import Logo from '../assets/Logo.png'
-import ProfileP from '../assets/Profile.png'
+import ProfileP from '../assets/Profile.jpeg'
 
 const Account = () => {
     const [nim, setNim] = useState('')

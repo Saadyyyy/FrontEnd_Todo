@@ -12,8 +12,7 @@ import {
   import { useNavigation } from '@react-navigation/native'
   import axios from 'axios'
   import AsyncStorage from '@react-native-async-storage/async-storage'
-  import Main from '../assets/Back2.jpg'
-  import Illustration from '../assets/Illustration.png'
+  import Illustration from '../assets/Logo.png'
 
 const Login = () => {
     const navigation = useNavigation();
@@ -83,7 +82,7 @@ const Login = () => {
         <View style={styles.container}>
          {/* <ImageBackground source={Main} resizeMode="cover"> */}
           <View style={styles.body}>
-              <Text style={styles.title1}>Login ke akunmu!</Text>
+              <Text style={styles.title1}>Silahkan Masukkan Akun </Text>
               <Image source={Illustration} style={styles.Illustration}/>
           </View>
           <View style={styles.form}>
@@ -114,7 +113,7 @@ const Login = () => {
             </TouchableOpacity>
             <Text style = {styles.lowerText}>
               Belum punya akun? 
-              <Text style ={{fontWeight : 'bold',color:'orange'}} 
+              <Text style ={{fontWeight : 'bold',color:'#9E6F21'}} 
               onPress={() => navigation.navigate('Register')}
               >
                Daftar disini
@@ -141,8 +140,10 @@ const Login = () => {
       },
       Illustration : {
         marginTop : 25,
+        marginBottom : 20,
         width : 240,
         height : 220,
+        borderRadius: 10
       },
       title1 : {
         fontSize : 27,
@@ -178,7 +179,7 @@ const Login = () => {
       button : {
           width :300,
           height : 50,
-          backgroundColor : '#f0a04b',
+          backgroundColor : '#9E6F21',
           borderRadius : 10,
           justifyContent : 'center',
           alignItems : 'center',
