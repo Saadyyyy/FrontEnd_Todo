@@ -24,7 +24,7 @@ const Register = () => {
     console.log('value', value);
 
     try {
-      const response = await axios.post('http://192.168.1.13:3800/mahasiswa/',{
+      const response = await axios.post('http://192.168.43.148:3800/mahasiswa/',{
         nim : value.nim,
         nama : value.nama,
         password : value.password
@@ -84,7 +84,7 @@ const Register = () => {
         </TouchableOpacity>
         <Text style = {styles.lowerText}>
           Already have an account? 
-          <Text style ={{fontWeight : 'bold',color:'##9E6F21'}} 
+          <Text style ={{fontWeight : 'bold',color:'#9E6F21'}} 
           onPress={() => navigation.navigate('Login')}
           >
            Sign In here

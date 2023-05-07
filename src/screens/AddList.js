@@ -62,7 +62,7 @@ const AddList = () => {
       console.log('value', value);
   
       try {
-        const response = await axios.post('http://192.168.1.13:3800/list/',{
+        const response = await axios.post('http://192.168.43.148:3800/list/',{
           nim : data.nim,
           kegiatan : value.kegiatan,
           tanggal : date

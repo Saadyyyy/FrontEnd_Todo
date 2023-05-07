@@ -58,7 +58,7 @@ const Login = () => {
       console.log('value', value);
 
       try {
-        const response = await axios.post('http://192.168.1.13:3800/mahasiswa/login',{
+        const response = await axios.post('http://192.168.43.148:3800/mahasiswa/login',{
           nim : value.nim,
           password : value.password
         })

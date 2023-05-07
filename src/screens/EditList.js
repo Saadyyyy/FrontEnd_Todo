@@ -46,7 +46,7 @@ const EditList = ({route}) => {
     const UpdateList = async (ferry) => {
         console.log('value', ferry);
         try {
-            const response = await axios.put(`http://192.168.1.13:3800/list?id=${list_id}`, {
+            const response = await axios.put(`http://192.168.43.148:3800/list?id=${list_id}`, {
                 kegiatan: ferry.kegiatan,
                 status: value,
                 tanggal: ferry.tanggal,
